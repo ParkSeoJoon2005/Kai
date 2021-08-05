@@ -1,4 +1,4 @@
-from SaitamaRobot import DB_URI
+from AsunaRobot import DB_URI
 from sqlalchemy import create_engine
 from sqlalchemy.exc import NoSuchModuleError
 from sqlalchemy.ext.declarative import declarative_base
