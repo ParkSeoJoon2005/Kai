@@ -13,11 +13,11 @@ import aiohttp
 from google_trans_new import google_translator
 from pyrogram import filters
 
-from SaitamaRobot import BOT_ID
-from SaitamaRobot.modules.mongo.chatbot_mongo import add_chat, get_session, remove_chat
-from SaitamaRobot.modules.karma import arq
-from SaitamaRobot.utils.pluginhelper import admins_only, edit_or_reply
-from SaitamaRobot import kp as kai
+from AsunaRobot import BOT_ID
+from AsunaRobot.modules.mongo.chatbot_mongo import add_chat, get_session, remove_chat
+from AsunaRobot.modules.karma import arq
+from AsunaRobot.utils.pluginhelper import admins_only, edit_or_reply
+from AsunaRobot import kp as kai
 
 translator = google_translator()
 
