@@ -6,18 +6,18 @@ from telegram.error import BadRequest
 from telegram.ext import CommandHandler, MessageHandler, Filters
 from telegram.utils.helpers import mention_html
 
-import SaitamaRobot.modules.sql.blacklist_sql as sql
-from SaitamaRobot import dispatcher, LOGGER
-from SaitamaRobot.modules.disable import DisableAbleCommandHandler
-from SaitamaRobot.modules.helper_funcs.chat_status import user_admin, user_not_admin
-from SaitamaRobot.modules.helper_funcs.extraction import extract_text
-from SaitamaRobot.modules.helper_funcs.misc import split_message
-from SaitamaRobot.modules.log_channel import loggable
-from SaitamaRobot.modules.warns import warn
-from SaitamaRobot.modules.helper_funcs.string_handling import extract_time
-from SaitamaRobot.modules.connection import connected
-from SaitamaRobot.modules.sql.approve_sql import is_approved
-from SaitamaRobot.modules.helper_funcs.alternate import send_message, typing_action
+import AsunaRobot.modules.sql.blacklist_sql as sql
+from AsunaRobot import dispatcher, LOGGER
+from AsunaRobot.modules.disable import DisableAbleCommandHandler
+from AsunaRobot.modules.helper_funcs.chat_status import user_admin, user_not_admin
+from AsunaRobot.modules.helper_funcs.extraction import extract_text
+from AsunaRobot.modules.helper_funcs.misc import split_message
+from AsunaRobot.modules.log_channel import loggable
+from AsunaRobot.modules.warns import warn
+from AsunaRobot.modules.helper_funcs.string_handling import extract_time
+from AsunaRobot.modules.connection import connected
+from AsunaRobot.modules.sql.approve_sql import is_approved
+from AsunaRobot.modules.helper_funcs.alternate import send_message, typing_action
 
 BLACKLIST_GROUP = 11
 
@@ -29,7 +29,7 @@ def blacklist(update, context):
     user = update.effective_user
     args = context.args
 
-    conn = connected(context.bot, update, chat, user.id, need_admin=False)
+    conn = connected(contexAsunaRobot.bot, update, chat, user.id, need_admin=False)
     if conn:
         chat_id = conn
         chat_name = dispatcher.bot.getChat(conn).title
