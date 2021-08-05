@@ -12,7 +12,7 @@ from telegram.ext import CallbackContext, CommandHandler
 from telegram.error import BadRequest
 from telegram.utils.helpers import escape_markdown, mention_html
 
-from SaitamaRobot import (
+from AsunaRobot import (
     DEV_USERS,
     OWNER_ID,
     DRAGONS,
@@ -23,15 +23,15 @@ from SaitamaRobot import (
     dispatcher,
     sw,
 )
-from SaitamaRobot.__main__ import STATS, TOKEN, USER_INFO
-import SaitamaRobot.modules.sql.userinfo_sql as sql
-from SaitamaRobot.modules.disable import DisableAbleCommandHandler
-from SaitamaRobot.modules.sql.global_bans_sql import is_user_gbanned
-from SaitamaRobot.modules.redis.afk_redis import is_user_afk, afk_reason
-from SaitamaRobot.modules.sql.users_sql import get_user_num_chats
-from SaitamaRobot.modules.helper_funcs.chat_status import sudo_plus
-from SaitamaRobot.modules.helper_funcs.extraction import extract_user
-from SaitamaRobot import telethn as SaitamaTelethonClient
+from AsunaRobot.__main__ import STATS, TOKEN, USER_INFO
+import AsunaRobot.modules.sql.userinfo_sql as sql
+from AsunaRobot.modules.disable import DisableAbleCommandHandler
+from AsunaRobot.modules.sql.global_bans_sql import is_user_gbanned
+from AsunaRobot.modules.redis.afk_redis import is_user_afk, afk_reason
+from AsunaRobot.modules.sql.users_sql import get_user_num_chats
+from AsunaRobot.modules.helper_funcs.chat_status import sudo_plus
+from AsunaRobot.modules.helper_funcs.extraction import extract_user
+from AsunaRobot import telethn as SaitamaTelethonClient
 
 
 def no_by_per(totalhp, percentage):
