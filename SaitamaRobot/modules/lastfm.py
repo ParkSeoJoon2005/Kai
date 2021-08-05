@@ -5,10 +5,10 @@ import requests
 from telegram import Update, ParseMode, InlineKeyboardMarkup, InlineKeyboardButton
 from telegram.ext import run_async, CommandHandler, CallbackContext
 
-from SaitamaRobot import dispatcher, LASTFM_API_KEY
-from SaitamaRobot.modules.disable import DisableAbleCommandHandler
+from AsunaRobot import dispatcher, LASTFM_API_KEY
+from AsunaRobot.modules.disable import DisableAbleCommandHandler
 
-import SaitamaRobot.modules.sql.last_fm_sql as sql
+import AsunaRobot.modules.sql.last_fm_sql as sql
 
 
 def set_user(update: Update, context: CallbackContext):
