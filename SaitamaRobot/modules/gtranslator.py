@@ -9,9 +9,9 @@ from telegram import (
     InlineKeyboardMarkup,
     InlineKeyboardButton,
 )
-from SaitamaRobot import dispatcher, kp
+from AsunaRobot import dispatcher, kp
 from pyrogram import filters
-from SaitamaRobot.modules.disable import DisableAbleCommandHandler
+from AsunaRobot.modules.disable import DisableAbleCommandHandler
 
 
 __help__ = """ 
