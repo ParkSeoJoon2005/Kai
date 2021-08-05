@@ -1,12 +1,12 @@
 import asyncio
 from pyrogram import filters
 from aiohttp import ClientSession
-from SaitamaRobot import kp as app
+from AsunaRobot import kp as app
 from Python_ARQ import ARQ
-from SaitamaRobot.utils.errors import capture_err
-from SaitamaRobot.utils.permissions import adminsOnly
-from SaitamaRobot.utils.adminperms import member_permissions
-from SaitamaRobot.utils.dbfunctions import (
+from AsunaRobot.utils.errors import capture_err
+from AsunaRobot.utils.permissions import adminsOnly
+from AsunaRobot.utils.adminperms import member_permissions
+from AsunaRobot.utils.dbfunctions import (
     alpha_to_int,
     get_karma,
     get_karmas,
@@ -16,7 +16,7 @@ from SaitamaRobot.utils.dbfunctions import (
     karma_on,
     update_karma,
 )
-from SaitamaRobot.utils.filter_groups import karma_negative_group, karma_positive_group
+from AsunaRobot.utils.filter_groups import karma_negative_group, karma_positive_group
 
 aiohttpsession = ClientSession()
 ARQ_API_KEY = "YKYUHE-KEWVTL-HHSTVX-AZDKWX-ARQ"
