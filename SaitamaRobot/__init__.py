@@ -41,7 +41,7 @@ logging.getLogger("pyrogram").setLevel(logging.WARNING)
 LOGGER = logging.getLogger(__name__)
 
 
-LOGGER.info([Asuna] Asuna is starting. | An Zero Union Project. | Licensed under GPLv3.")
+LOGGER.info("[Asuna] Asuna is starting. | An Zero Union Project. | Licensed under GPLv3.")
 
 LOGGER.info("[Asuna] Not affiliated to Shie Hashaikai or Villain in any way whatsoever.")
 LOGGER.info("[Asuna] Project maintained by: github.com/HuntingBots (t.me/The_Ghost_Hunter)")
