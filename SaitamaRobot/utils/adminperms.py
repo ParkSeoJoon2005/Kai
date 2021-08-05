@@ -1,7 +1,7 @@
 import asyncio
 from pyrogram import filters
 from pyrogram.types import ChatPermissions, Message
-from SaitamaRobot import kp as app
+from AsunaRobot import kp as app
 
 
 async def member_permissions(chat_id: int, user_id: int):
