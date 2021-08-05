@@ -6,22 +6,22 @@ from telegram import MessageEntity, ParseMode
 from telegram.error import BadRequest
 from telegram.ext import Filters, MessageHandler
 
-from SaitamaRobot import dispatcher
-from SaitamaRobot.modules.disable import (
+from AsunaRobot import dispatcher
+from AsunaRobot.modules.disable import (
     DisableAbleCommandHandler,
     DisableAbleMessageHandler,
 )
-from SaitamaRobot.modules.redis.afk_redis import (
+from AsunaRobot.modules.redis.afk_redis import (
     start_afk,
     end_afk,
     is_user_afk,
     afk_reason,
 )
-from SaitamaRobot import REDIS
-from SaitamaRobot.modules.users import get_user_id
+from AsunaRobot import REDIS
+from AsunaRobot.modules.users import get_user_id
 
-from SaitamaRobot.modules.helper_funcs.alternate import send_message
-from SaitamaRobot.modules.helper_funcs.readable_time import get_readable_time
+from AsunaRobot.modules.helper_funcs.alternate import send_message
+from AsunaRobot.modules.helper_funcs.readable_time import get_readable_time
 
 AFK_GROUP = 7
 AFK_REPLY_GROUP = 8
