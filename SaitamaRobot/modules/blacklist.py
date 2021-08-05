@@ -29,7 +29,7 @@ def blacklist(update, context):
     user = update.effective_user
     args = context.args
 
-    conn = connected(contexAsunaRobot.bot, update, chat, user.id, need_admin=False)
+    conn = connected(context.bot, update, chat, user.id, need_admin=False)
     if conn:
         chat_id = conn
         chat_name = dispatcher.bot.getChat(conn).title
