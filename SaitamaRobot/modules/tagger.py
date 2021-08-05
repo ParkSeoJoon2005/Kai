@@ -9,14 +9,14 @@ from telegram.ext import (
     CommandHandler,
     CallbackQueryHandler,
 )
-from SaitamaRobot import dispatcher, REDIS
-from SaitamaRobot.modules.disable import DisableAbleCommandHandler
-from SaitamaRobot.modules.helper_funcs.chat_status import (
+from AsunaRobot import dispatcher, REDIS
+from AsunaRobot.modules.disable import DisableAbleCommandHandler
+from AsunaRobot.modules.helper_funcs.chat_status import (
     bot_admin,
     user_admin,
 )
-from SaitamaRobot.modules.helper_funcs.extraction import extract_user_and_text
-from SaitamaRobot.modules.helper_funcs.alternate import typing_action
+from AsunaRobot.modules.helper_funcs.extraction import extract_user_and_text
+from AsunaRobot.modules.helper_funcs.alternate import typing_action
 
 
 @bot_admin
