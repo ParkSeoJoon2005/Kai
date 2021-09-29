@@ -9,6 +9,7 @@ import telegram.ext as tg
 from redis import StrictRedis
 from aiohttp import ClientSession
 from Python_ARQ import ARQ
+from AsunaRobot.confing import get_int_key, get_str_key
 from pymongo import MongoClient
 from odmantic import AIOEngine
 from motor import motor_asyncio
