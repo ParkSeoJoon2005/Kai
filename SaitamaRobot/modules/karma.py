@@ -6,7 +6,7 @@ from Python_ARQ import ARQ
 from AsunaRobot.utils.errors import capture_err
 from AsunaRobot.utils.permissions import adminsOnly
 from AsunaRobot.utils.adminperms import member_permissions
-from AsunaRobot.utils.dbfunctions import (
+from AsunaRobot.bot_plugins.dbfunctions import (
     alpha_to_int,
     get_karma,
     get_karmas,
